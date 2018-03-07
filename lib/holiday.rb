@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s.split("")
       holiday = holiday.collect { |char| ' ' if char == '_' }
       holiday = holiday.join
-      put_holiday = "  #{holiday.capitalize}:"
+      put_holiday = "  #{holiday.to_s.capitalize}:"
       supplies.each_with_index do |supply, i|
         put_holiday += " #{supply}#{"," if i < supplies.length-1}"
       end
