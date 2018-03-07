@@ -71,6 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         put_holiday += " #{supply}#{"," if i < supplies.length-1}"
       end
       puts put_holiday
+      binding.pry
     end
   end
 end
